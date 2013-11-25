@@ -1,0 +1,35 @@
+body {
+	background-color: #CCC;
+	font-family: Arial;
+}
+
+header {
+
+}
+
+.container {
+	background-color: #FFF;
+	box-shadow: 2px 2px 5px #555;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+header {
+
+}
+
+.content {
+
+}
+
+footer {
+
+}
+
+footer p {
+	text-align: right;
+}
+
+p b {
+	font-weight: bold;
+}
