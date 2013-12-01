@@ -1,7 +1,7 @@
 body {
-	background-color: #CCC;
+	background-color: rgb(19,112,114);
 	font-family: Arial;
-	background-image: url(../img/grey_wash_wall.png);
+	/*background-image: url(../img/grey_wash_wall.png);*/
 }
 
 header {
@@ -13,7 +13,8 @@ header {
 }
 
 .container {
-	background-color: #FFF;
+	/*background-color: #FFF;*/
+	background-color: rgb(251, 255, 192);
 	box-shadow: 2px 2px 5px #555;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -32,6 +33,28 @@ header {
 
 header .nav {
 	padding-top: 25px;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: rgb(86, 178, 146);
+	font-weight: bold;
+
+ 	-webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav a:link,
+nav a:visited {
+	text-decoration:none;
+}
+
+nav a:hover {
+	background-color: rgb(183, 245, 171);
 }
 
 .content {
