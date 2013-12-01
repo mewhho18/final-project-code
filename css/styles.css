@@ -19,14 +19,40 @@ header {
 	margin-top: 20px;
 	width: 75%;
 	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px;
 }
 
 header {
 
 }
 
+header .nav {
+	padding-top: 25px;
+}
+
 .content {
 
+}
+
+.carousel {
+}
+
+.item img {
+	border-radius: 20px;
+}
+
+.left.carousel-control {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.right.carousel-control {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 footer {
@@ -35,8 +61,20 @@ footer {
 
 footer p {
 	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 p b {
 	font-weight: bold;
+}
+
+.content p {
+	margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.carousel {
+		display: none;
+	}
 }
