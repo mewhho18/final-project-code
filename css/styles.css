@@ -58,7 +58,39 @@ nav a:hover {
 }
 
 .content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #FFF;
+}
 
+.content h1 {
+	font-size: 150%;
+	font-weight: bold;
+}
+.content .main-pic {
+	width: 400px;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+.content .pics {
+	clear: both;
+}
+
+.content .pics figure {
+	display: inline-block;
+	padding: 10px;
+	background-color: #FFF;
+}
+
+.content .pics figure img {
+	height: 150px;
+}
+
+.content .pics figure figcaption {
+	text-align: center;
 }
 
 .carousel {
