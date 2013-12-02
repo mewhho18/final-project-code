@@ -32,9 +32,7 @@ header {
 }
 
 header .nav {
-	margin-top: 25px;
-	border-radius: 5px;
-	background-color: aliceblue; /* for now */
+	padding-top: 25px;
 }
 
 nav a {
@@ -89,6 +87,8 @@ nav a:hover {
 
 .content .pics figure img {
 	height: 150px;
+
+	
 }
 
 .content .pics figure figcaption {
