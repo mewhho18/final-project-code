@@ -14,6 +14,7 @@
 	    <title>Tess Rental</title>
 	    
 	    <meta name="author" content="Thomas Phan, Marissa Ho, Laura McFarlane, and Brett Yamada">
+	    <meta class="this-neighborhood" value="downtown">
 	</head>
 	<body>
 		<div class="container">
@@ -38,14 +39,19 @@
 			
 			<div class="content">
 				<img class="main-pic" src="img/G_Images/Downtown_Condos.png">
-				<h1>Downtown Condos</h1>
-				<ul>
-					<li>Address: 2100 3rd Ave, Seattle, WA 98115</li>
-					<li>2 Units</li>
-					<li>2 Bedrooms</li>
-					<li>2 Baths</li>
-				</ul>
-
+				<div class="apt-container">
+					<div class="template apt-template">
+						<h1 class="apt-name"></h1>
+						<ul>
+							<li><span class="apt-addr1"></span></li>
+							<li class="apt-addr2"></li>
+							<li>Units: <span class="apt-units"></span></li>
+							<li>Vacancies: <span class="apt-vacancies"></span></li>
+							<li>Bedrooms: <span class="apt-bedroom"></span></li>
+							<li>Bath: <span class="apt-bath"></span></li>
+						</ul>
+					</div>
+				</div>
 				<div class="pics">
 					<figure>
 						<a href="img/5210-Unit-A/bathroom_floor.jpg"><img src="img/5210-Unit-A/bathroom_floor.jpg"></a>
@@ -110,6 +116,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<!-- Boostrap script -->
 	    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	    <!-- carousel script --> 
+	    <!-- neighborhood objects -->
+	    <script src="js/neighborhoods.js"></script>
+	    <!-- render script -->
+	    <script src="js/aptRender.js"></script>
 	</body>
 </html>

@@ -135,3 +135,7 @@ p b {
 		display: none;
 	}
 }
+
+.template {
+	display: none;
+}
