@@ -13,6 +13,8 @@ $(function(){
 		neighborhood = downtown;
 	} else if ($('.this-neighborhood').attr('value') == 'lictonSprings') {
 		neighborhood = lictonSprings;
+	} else if ($('.this-neighborhood').attr('value') == 'uDistrict') {
+		neighborhood = uDistrict;
 	}
 
 	instance.find('.apt-name').html(neighborhood.name);
