@@ -3,13 +3,29 @@
 */
 
 var downtown = {
-	"name": "Downtown Condos",
+	"name": "Royal Crest Condos",
 	"units": 2,
 	"vacancies": 0,
 	"address1": "2100 3rd Ave",
 	"address2": "Seattle, WA 98121",
 	"bedroom": 2,
-	"bath": 2
+	"bath": 2,
+	"pic": ['../img/royal-crest/bathroom.jpg',
+			'../img/royal-crest/building.jpg',
+			'../img/royal-crest/floor.jpg',
+			'../img/royal-crest/floor2.jpg',
+			'../img/royal-crest/floor3.jpg',
+			'../img/royal-crest/gate.jpg',
+			'../img/royal-crest/guest_bath.jpg',
+			'../img/royal-crest/gym.jpg',
+			'../img/royal-crest/kitchen1.jpg',
+			'../img/royal-crest/kitchen2.jpg',
+			'../img/royal-crest/lobby.jpg',
+			'../img/royal-crest/pool.jpg',
+			'../img/royal-crest/roof.jpg',
+			'../img/royal-crest/roof_garden.jpg',
+			'../img/royal-crest/roof_garden2.jpg'
+			]
 }
 
 var lictonSprings = {
