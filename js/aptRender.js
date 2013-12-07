@@ -19,6 +19,10 @@ $(function(){
 		neighborhood = lictonSprings;
 	} else if ($('.this-neighborhood').attr('value') == 'uDistrict') {
 		neighborhood = uDistrict;
+	} else if ($('.this-neighborhood').attr('value') == 'westGreenlake') {
+		neighborhood = westGreenlake;
+	} else if ($('.this-neighborhood').attr('value') == 'eastGreenlake') {
+		neighborhood = eastGreenlake;
 	}
 
 	instance.find('.apt-name').html(neighborhood.name);
@@ -28,13 +32,18 @@ $(function(){
 	instance.find('.apt-vacancies').html(neighborhood.vacancies);
 	instance.find('.apt-bedroom').html(neighborhood.bedroom);
 	instance.find('.apt-bath').html(neighborhood.bath);
+	instance.find('.apt-description').html(neighborhood.description);
 	for (idx = 0; idx < neighborhood.pic.length; ++idx) {
-		var image = neighborhood.pic[idx];
+		var image = neighborhood.pic[idx].image;
+		var caption = neighborhood.pic[idx].caption;
 		imgInstance = picTemplate.clone();
 		imgInstance.find('.pic').attr({
-			src: image
+			src: image, 
+			alt: caption
 		});
-		instance.removeClass('');
+		imgInstance.find('.image-link').attr({href: image});
+		imgInstance.find('.caption').html(caption);
+		imgInstance.removeClass('template');
 		picContainer.append(imgInstance);
 	}
 

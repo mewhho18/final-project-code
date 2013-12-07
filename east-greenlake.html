@@ -10,17 +10,22 @@
 	    <link rel="shortcut-icon" type="text/css" href="">	
 	    <!-- our css reset file -->
 	    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	    <!-- mini carousel -->
+	    <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+	    <script src="js/jquery.jcarousel.js"></script>
+	    <script src="js/jcarousel.responsive.js"></script>
 
 	    <title>Tess Rental</title>
-	    
+
 	    <meta name="author" content="Thomas Phan, Marissa Ho, Laura McFarlane, and Brett Yamada">
+	    <meta class="this-neighborhood" value="eastGreenlake">
 	</head>
 	<body>
 		<div class="container">
 			<header>
 				<div class="logo"><img src="img/logo.png" alt="logo"></div>
 				<ul class="nav nav-pills nav-justified">
-					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
 					<li class="dropdown">
 					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 					    Neighborhoods<span class="caret"></span>
@@ -33,39 +38,35 @@
 					    	<li><a href="royal-crest.html">Downtown</a></li>
 					    </ul>
 					</li>
-					<li class="active"><a href="about.html">About</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="apply.html">Apply</a></li>
 				</ul>
 			</header>
-				
-				<div class="row">
-					<div class="col-md-4">	
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="content">
+				<img class="main-pic" src="img/G_Images/East_Greenlake_2.png">
+				<div class="apt-container">
+					<div class="template apt-template">
+						<h1 class="apt-name"></h1>
+						<ul>
+							<li><span class="apt-addr1"></span></li>
+							<li class="apt-addr2"></li>
+							<li>Units: <span class="apt-units"></span></li>
+							<li>Vacancies: <span class="apt-vacancies"></span></li>
+							<li>Bedrooms: <span class="apt-bedroom"></span></li>
+							<li>Bath: <span class="apt-bath"></span></li>
+							<p class="apt-description"></p>
+						</ul>
 					</div>
+				</div>
 
-					<div class="col-md-4">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-
-					<div class="col-md-4">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</div> <!-- row -->
+				<div class="pics pic-container">
+					<div class="template pic-template">
+						<figure>
+							<a class="image-link" href=""><img class="pic" src="" alt=""></a>
+							<figcaption class="caption"></figcaption>
+						</figure>
+					</div> <!-- pic template -->
+				</div> <!-- pic container -->
 			</div> <!-- content -->
 			
 			<footer>
@@ -79,7 +80,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<!-- Boostrap script -->
 	    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	    <!-- carousel script --> 
-		<script>$('.carousel').carousel();</script>
+	    <!-- neighborhood objects -->
+	    <script src="js/neighborhoods.js"></script>
+	    <!-- render script -->
+	    <script src="js/aptRender.js"></script>
 	</body>
 </html>
