@@ -11,6 +11,9 @@
 	    <!-- our css reset file -->
 	    <link rel="stylesheet" type="text/css" href="css/reset.css">
 
+	    <!-- Example assets -->
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+
 	    <title>Tess Rental</title>
 	    
 	    <meta name="author" content="Thomas Phan, Marissa Ho, Laura McFarlane, and Brett Yamada">
@@ -51,18 +54,23 @@
 							<li>Vacancies: <span class="apt-vacancies"></span></li>
 							<li>Bedrooms: <span class="apt-bedroom"></span></li>
 							<li>Bath: <span class="apt-bath"></span></li>
-							<p class="apt-description"></p>
+							<li class="apt-description"></li>
 						</ul>
 					</div> <!-- apt template -->
 				</div> <!-- apt container -->
-				<div class="pics pic-container">
-					<div class="template pic-template">
-						<figure>
-							<a class="image-link" href=""><img class="pic" src="" alt=""></a>
-							<figcaption class="caption"></figcaption>
-						</figure>
-					</div> <!-- pic template -->
-				</div> <!-- pic container -->
+				<div class="jcarousel-wrapper">
+					<div class="jcarousel">
+						<div class="thing pic-container">
+							<figure class="template pic-template">
+								<a class="image-link" href=""><img class="pic" src="" alt=""></a>
+								<figcaption class="caption"></figcaption>
+							</figure> <!-- pic template -->
+						</div> <!-- pic container -->
+						<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+		            </div> <!-- jcarousel -->
+		            <p class="jcarousel-pagination"></p>
+				</div> <!-- jcarousel-wrapper -->
 			</div> <!-- content -->
 			
 			<footer>
@@ -76,9 +84,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<!-- Boostrap script -->
 	    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	    <!-- neighborhood objects -->
+       	<!-- neighborhood objects -->
 	    <script src="js/neighborhoods.js"></script>
 	    <!-- render script -->
 	    <script src="js/aptRender.js"></script>
+	    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
 	</body>
 </html>

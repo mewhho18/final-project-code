@@ -76,41 +76,8 @@ nav a:hover {
 
 }
 
-.content .pics {
-	clear: both;
-}
-
-.content .pics figure {
-	display: inline-block;
-	padding: 10px;
-	background-color: #FFF;
-}
-
-.content .pics figure img {
-	height: 150px;
-
-	
-}
-
-.content .pics figure figcaption {
-	text-align: center;
-}
-
-.carousel {
-}
-
 .item img {
 	border-radius: 20px;
-}
-
-.left.carousel-control {
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
-
-.right.carousel-control {
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
 }
 
 footer {
