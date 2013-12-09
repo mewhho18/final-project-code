@@ -2,7 +2,7 @@
     margin: 20px auto;
     position: relative;
     clear: both;
-    border: 10px solid #000;
+    border: 3px solid rgb(0,139,116);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -17,7 +17,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
 
 }
 
@@ -27,6 +27,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    background-color: #FFF;
 }
 
 
@@ -41,11 +42,10 @@
 
 .jcarousel img {
     display: block;
-    height: 100%;
-    width: 100%;
+    height: 90%;
 }
 
-.jcarousel figcaption {
+.jcarousel figure figcaption {
     text-align: center;
     position: absolute;
 }
