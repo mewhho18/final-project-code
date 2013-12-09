@@ -50,7 +50,7 @@ var lictonSprings = {
 	"address2": "Seattle, WA 98103",
 	"bedroom": "3 and 4",
 	"bath": 2,
-	"description": "test test test",
+	"description": "This is a multi-family home located between Licton Springs and Greenlake neighborhoods.",
 	"pic": [{thumb: 'img/licton-springs/thumbs/facade1.jpg', caption: 'Exterior of Apartment',
 			image: 'img/licton-springs/facade1.jpg'},
 			{thumb: 'img/licton-springs/thumbs/facade2.jpg', caption: 'Exterior of Apartment',

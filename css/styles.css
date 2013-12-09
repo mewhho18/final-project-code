@@ -75,6 +75,11 @@ header .nav a { /* Adds transitions for hover over nav bar links*/
 	border-bottom-color: #FFF;
 }
 
+.nav .caret:hover {
+	border-top-color: rgb(0, 166, 122);
+	border-bottom-color: rgb(0, 166, 122);
+}
+
 header .nav li a {	/* drop-down menu lists*/
 	display: block;
 	position: relative;
@@ -125,14 +130,23 @@ header .nav a:hover {
 	border-radius: 20px;
 }
 
-ol {
+.steps {
     counter-reset: item;
-    list-style-type: decimal;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-ol li:before {
-    content: counter(item, decimal) '. ';
+.steps li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+}
+.steps li:before {
+    display: inline-block;
+    content: counter(item) ") ";
     counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
 }
 
 
