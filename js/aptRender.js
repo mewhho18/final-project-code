@@ -15,7 +15,7 @@ $(function(){
 
 	if ($('.this-neighborhood').attr('value') == 'downtown') {
 		neighborhood = downtown;
-	} else if ($('.thyis-neighborhood').attr('value') == 'lictonSprings') {
+	} else if ($('.this-neighborhood').attr('value') == 'lictonSprings') {
 		neighborhood = lictonSprings;
 	} else if ($('.this-neighborhood').attr('value') == 'uDistrict') {
 		neighborhood = uDistrict;

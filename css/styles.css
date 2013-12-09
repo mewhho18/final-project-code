@@ -35,6 +35,9 @@ header .nav {
 	padding-bottom: 10px;
 }
 
+header .nav-justified {
+}
+
 header .nav a {
 	display: inline-block;
 	padding: 10px;
@@ -42,8 +45,18 @@ header .nav a {
 	font-weight: bold;
 	font-family: Arial;
 	background-color: rgb(0,139,116);
+	text-align: center;
 }
 
+header .nav li a {	/* drop-down menu lists*/
+	display: block;
+	position: relative;
+}
+
+header .dropdown-menu {
+	padding: 0;
+	right: 0;
+}
 
 nav a:link,
 nav a:visited {
@@ -51,6 +64,10 @@ nav a:visited {
 }
 
 header .nav a:hover {
+	background-color: rgb(0, 166, 122);
+}
+
+header .nav a:active {
 	background-color: rgb(0, 166, 122);
 }
 /*
