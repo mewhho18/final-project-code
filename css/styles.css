@@ -2,7 +2,7 @@ body {
 /*	background-color: rgb(19,112,114);*/
 	background-color: #FFF;
 	font-family: Arial;
-	/*background-image: url(../img/grey_wash_wall.png);*/
+	background-image: url(../img/green_dust_scratch.png);
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 }
 
 .container {
-	/*background-color: #FFF;*/
+	background-color: #FFF;
 /*	background-color: rgb(251, 255, 192);*/
 
 	margin: 0 auto;
@@ -60,7 +60,6 @@ header .nav a { /* Adds transitions for hover over nav bar links*/
 	font-weight: bold;
 	font-family: Arial;
 	background-color: rgb(0,139,116);
-	background-image: webkit-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%);
 	text-align: center;
 
 	-webkit-transition: all 0.4s;
