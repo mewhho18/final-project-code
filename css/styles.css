@@ -47,6 +47,12 @@ header .nav li { /* Adds transitions for hover over navigation bars*/
 	transition: all 0.4s;
 }
 
+.nav-pills li.active a,	/* Active tag */
+.nav-pills li.active a:hover,
+.nav-pills li.active a:focus {
+	background-color: rgb(0, 166, 122);
+}
+
 header .nav a { /* Adds transitions for hover over nav bar links*/
 	display: inline-block;
 	padding: 10px;
@@ -54,6 +60,7 @@ header .nav a { /* Adds transitions for hover over nav bar links*/
 	font-weight: bold;
 	font-family: Arial;
 	background-color: rgb(0,139,116);
+	background-image: webkit-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%);
 	text-align: center;
 
 	-webkit-transition: all 0.4s;
@@ -61,6 +68,11 @@ header .nav a { /* Adds transitions for hover over nav bar links*/
 	-o-transition: all 0.4s;
 	-ms-transition: all 0.4s;
 	transition: all 0.4s;
+}
+
+.nav .caret {
+	border-top-color: #FFF;
+	border-bottom-color: #FFF;
 }
 
 header .nav li a {	/* drop-down menu lists*/
@@ -123,7 +135,7 @@ ol li:before {
     counter-increment: item;
 }
 
-/* - really laggy
+
 .pic {
 	opacity: 0.75;
 
@@ -137,7 +149,14 @@ ol li:before {
 .pic:hover {
 	opacity: 1.0;
 }
+
+
+/*
+.image-link:hover {
+	display: block;
+} 
 */
+
 
 footer {
 
