@@ -34,11 +34,12 @@ $(function(){
 	instance.find('.apt-bath').html(neighborhood.bath);
 	instance.find('.apt-description').html(neighborhood.description);
 	for (idx = 0; idx < neighborhood.pic.length; ++idx) {
+		var thumb = neighborhood.pic[idx].thumb;
 		var image = neighborhood.pic[idx].image;
 		var caption = neighborhood.pic[idx].caption;
 		imgInstance = picTemplate.clone();
 		imgInstance.find('.pic').attr({
-			src: image, 
+			src: thumb, 
 			alt: caption
 		});
 		imgInstance.find('.image-link').attr({href: image});
