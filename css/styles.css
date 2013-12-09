@@ -9,10 +9,6 @@ header {
 
 }
 
-.col-md-4 p {
-	/*padding: 10px;*/
-}
-
 .container {
 	background-color: #FFF;
 /*	background-color: rgb(251, 255, 192);*/
@@ -25,10 +21,6 @@ header {
 	margin-bottom: 30px;
  	border-radius: 5px;
  	border: 1px solid #000; /* Added so I can visualize where the borders are*/
-}
-
-header {
-
 }
 
 header .nav {
@@ -99,13 +91,6 @@ header .nav a:hover {
 	background-color: rgb(0, 166, 122);
 }
 
-/*
-.content-area {
-	width: 100%
-	margin-left:none;
-	margin-right: none;
-	background-color: #FFF;
-}*/
 .content {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -113,11 +98,11 @@ header .nav a:hover {
 	width:100%;
 }
 
-.content h1 {
+h1 {
 	font-size: 150%;
 	font-weight: bold;
 }
-.content .main-pic {
+.main-pic {
 	width: 400px;
 	float: left;
 	padding-right: 10px;
@@ -164,13 +149,6 @@ header .nav a:hover {
 }
 
 
-/*
-.image-link:hover {
-	display: block;
-} 
-*/
-
-
 footer {
 
 }
@@ -183,10 +161,6 @@ footer p {
 
 p b {
 	font-weight: bold;
-}
-
-.content p {
-	margin-top: 5px;
 }
 
 .carousel {
