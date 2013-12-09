@@ -1,5 +1,6 @@
 body {
-	background-color: rgb(19,112,114);
+/*	background-color: rgb(19,112,114);*/
+	background-color: #FFF;
 	font-family: Arial;
 	/*background-image: url(../img/grey_wash_wall.png);*/
 }
@@ -9,22 +10,20 @@ header {
 }
 
 .col-md-4 p {
-	padding: 10px;
+	/*padding: 10px;*/
 }
 
 .container {
 	/*background-color: #FFF;*/
-	background-color: rgb(251, 255, 192);
-	box-shadow: 2px 2px 5px #555;
+/*	background-color: rgb(251, 255, 192);*/
+
 	margin: 0 auto;
 	margin-top: 20px;
 	width: 75%;
 	padding: 10px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding-left: 50px;
-	padding-right: 50px;
-	border-radius: 5px;
+ 	border-radius: 5px;
 }
 
 header {
@@ -36,32 +35,36 @@ header .nav {
 	padding-bottom: 10px;
 }
 
-nav a {
+header .nav a {
 	display: inline-block;
 	padding: 10px;
-	color: rgb(86, 178, 146);
+	color: #FFF;
 	font-weight: bold;
-
- 	-webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
+	font-family: Arial;
+	background-color: rgb(0,139,116);
 }
+
 
 nav a:link,
 nav a:visited {
 	text-decoration:none;
 }
 
-nav a:hover {
-	background-color: rgb(183, 245, 171);
+header .nav a:hover {
+	background-color: rgb(0, 166, 122);
 }
-
+/*
+.content-area {
+	width: 100%
+	margin-left:none;
+	margin-right: none;
+	background-color: #FFF;
+}*/
 .content {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #FFF;
+	width:100%;
 }
 
 .content h1 {
@@ -96,6 +99,10 @@ p b {
 
 .content p {
 	margin-top: 5px;
+}
+
+.carousel {
+	height: auto;
 }
 
 @media screen and (max-width: 767px) {
