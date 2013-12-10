@@ -12,6 +12,7 @@ body {
 	background-image: url(../img/neighboring-area/greenlake6.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 	font-family: 'Federo', sans-serif;
 	font-size: 18px;
 }
