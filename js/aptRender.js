@@ -1,7 +1,6 @@
 /*
 	aptRender.js
 */
-
 //on ready function
 $(function(){
 	if ($('.this-neighborhood').attr('content') == 'downtown') {
@@ -18,6 +17,10 @@ $(function(){
 
 	renderInfo(neighborhood);
 	renderMap(neighborhood);
+
+	$('.image-link').magnificPopup({
+		type:'image'
+	});
 });
 
 function renderInfo(neighborhood) {
@@ -67,7 +70,7 @@ function renderMap(neighborhood) {
 	addAptMarker(aptMap, neighborhood);	
 } //renderMap()
  
- function addAptMarker(aptMap, neighborhood) {
+function addAptMarker(aptMap, neighborhood) {
     var apt; 
     var mapMarker; 
   	var infoWindow;
@@ -86,3 +89,33 @@ function renderMap(neighborhood) {
    		infoWindow.open(aptMap, mapMarker);
    });
 } //addAptMarker()
+
+/*
+$('.image-link').magnificPopup({ 
+	  type: 'image'
+		// other options
+});
+
+image: {
+	markup: '<div class="mfp-figure">'+
+	            '<div class="mfp-close"></div>'+
+	            '<div class="mfp-img"></div>'+
+	            '<div class="mfp-bottom-bar">'+
+	              '<div class="mfp-title"></div>'+
+	              '<div class="mfp-counter"></div>'+
+	            '</div>'+
+	          '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+	cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor. 
+	  
+	titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
+	// Or the function that should return the title. For example:
+	// titleSrc: function(item) {
+	//   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+	// }
+
+	verticalFit: true, // Fits image in area vertically
+
+	tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+}
+*/
