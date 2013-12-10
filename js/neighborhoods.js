@@ -120,7 +120,7 @@ var westGreenlake = {
 	"address2": "Seattle, WA 98103",
 	"bedroom": 1,
 	"bath": 1,
-	"description": "test test test",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 	"pic": [{thumb: 'img/west-greenlake/thumbs/facade1.jpg', caption: 'Exterior of Apartment',
 			image: 'img/west-greenlake/facade1.jpg'},
 			{thumb: 'img/west-greenlake/thumbs/facade1.jpg', caption: 'Exterior of Apartment',
