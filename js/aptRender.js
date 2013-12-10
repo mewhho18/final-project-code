@@ -4,6 +4,23 @@
 
 //on ready function
 $(function(){
+	if ($('.this-neighborhood').attr('content') == 'downtown') {
+		neighborhood = downtown;
+	} else if ($('.this-neighborhood').attr('content') == 'lictonSprings') {
+		neighborhood = lictonSprings;
+	} else if ($('.this-neighborhood').attr('content') == 'uDistrict') {
+		neighborhood = uDistrict;
+	} else if ($('.this-neighborhood').attr('content') == 'westGreenlake') {
+		neighborhood = westGreenlake;
+	} else if ($('.this-neighborhood').attr('content') == 'eastGreenlake') {
+		neighborhood = eastGreenlake;
+	}
+
+	renderInfo(neighborhood);
+	renderMap(neighborhood);
+});
+
+function renderInfo(neighborhood) {
 	var aptTemplate = $('.apt-template');
 	var picTemplate = $('.pic-template');
 	var container = $('.apt-container');
@@ -12,18 +29,6 @@ $(function(){
 	var imgInstance;
 	var neighborhood;
 	var idx;
-
-	if ($('.this-neighborhood').attr('value') == 'downtown') {
-		neighborhood = downtown;
-	} else if ($('.this-neighborhood').attr('value') == 'lictonSprings') {
-		neighborhood = lictonSprings;
-	} else if ($('.this-neighborhood').attr('value') == 'uDistrict') {
-		neighborhood = uDistrict;
-	} else if ($('.this-neighborhood').attr('value') == 'westGreenlake') {
-		neighborhood = westGreenlake;
-	} else if ($('.this-neighborhood').attr('value') == 'eastGreenlake') {
-		neighborhood = eastGreenlake;
-	}
 
 	instance.find('.apt-name').html(neighborhood.name);
 	instance.find('.apt-addr1').html(neighborhood.address1);
@@ -50,7 +55,34 @@ $(function(){
 
 	instance.removeClass('template');
 	container.append(instance);
-});
+} //renderInfo()
 
-
+function renderMap(neighborhood) {
+	var aptMap = new google.maps.Map($('.map-container')[0], {
+	    center: new google.maps.LatLng(neighborhood.lat, neighborhood.long), 
+	    zoom: 13,                                  
+	    mapTypeId: google.maps.MapTypeId.ROADMAP,  
+	    streetViewControl: false                  
+	});	
+	addAptMarker(aptMap, neighborhood);	
+} //renderMap()
  
+ function addAptMarker(aptMap, neighborhood) {
+    var apt; 
+    var mapMarker; 
+  	var infoWindow;
+
+	mapMarker = new google.maps.Marker({
+	    map: aptMap,
+		position: new google.maps.LatLng(neighborhood.lat, neighborhood.long),
+		title: neighborhood.name
+	});
+
+   infoWindow = new google.maps.InfoWindow({
+	    content: neighborhood.name
+	});
+
+   google.maps.event.addListener(mapMarker, 'click', function(){
+   		infoWindow.open(aptMap, mapMarker);
+   });
+} //addAptMarker()

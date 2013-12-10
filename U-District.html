@@ -10,19 +10,20 @@
 	    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	    <!-- shortcut icon will go here -->
-	    <link rel="shortcut icon" type="text/css" href="img/apt_icon.png">
+	    <link rel="shortcut icon" type="text/css" href="img/apt_icon.png">	
 
+	    <!-- mini carousel -->
 	    <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
 
 	    <title>Tess Rental</title>
-	   
+
 	    <meta name="author" content="Thomas Phan, Marissa Ho, Laura McFarlane, and Brett Yamada">
-	    <meta class="this-neighborhood" value="uDistrict">	    
+	    <meta class="this-neighborhood" name="author" content="uDistrict">
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<div class="logo"><img src="img/logo.png" alt="logo"></div>
+				<img class="logo" src="img/logo.png" alt="logo">
 				<ul class="nav nav-pills nav-justified">
 					<li><a href="index.html">Home</a></li>
 					<li class="dropdown">
@@ -37,42 +38,53 @@
 					    	<li><a href="royal-crest.html">Downtown</a></li>
 					    </ul>
 					</li>
-					<li><a href="about.html">About</a></li>
 					<li><a href="apply.html">Apply</a></li>
 				</ul>
 			</header>
-			
 			<div class="content">
-				<img class="main-pic" src="img/u-district/facade1.jpg">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="main-pic" src="img/u-district/facade1.jpg" alt="Main picture of U-District Apartments">
+					</div><!-- column -->
+					<div class="col-md-6">
+						<div class="map-container"></div>
+					</div><!-- column -->
+				</div> <!-- row -->
 				<div class="apt-container">
 					<div class="template apt-template">
-						<h1 class="apt-name"></h1>
-						<ul>
-							<li><span class="apt-addr1"></span></li>
-							<li class="apt-addr2"></li>
-							<li>Units: <span class="apt-units"></span></li>
-							<li>Vacancies: <span class="apt-vacancies"></span></li>
-							<li>Bedrooms: <span class="apt-bedroom"></span></li>
-							<li>Bath: <span class="apt-bath"></span></li>
-							<p class="apt-description"></p>
-						</ul>
-					</div>
-				</div>
+						<div class="row">
+							<div class="col-md-6 apt-info">
+								<h1 class="apt-name"></h1>
+								<ul>
+									<li><span class="apt-addr1"></span> <span class="apt-addr2"></span></li>
+									<li>Vacancies: <span class="apt-vacancies"></span></li>
+									<li>Bedrooms: <span class="apt-bedroom"></span></li>
+									<li>Units: <span class="apt-units"></span></li>
+									<li>Bath: <span class="apt-bath"></span></li>
+								</ul>
+							</div> <!-- column -->
+							<div class="col-md-6">
+								<p class="apt-description"></p>
+							</div> <!-- column -->
+						</div> <!-- row -->
+					</div> <!-- template -->
+				</div> <!-- container -->
 
 				<div class="jcarousel-wrapper">
 					<div class="jcarousel">
 						<div class="thing pic-container">
 						</div> <!-- pic container -->
-						<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-		                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 		            </div> <!-- jcarousel -->
+		            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+		            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 		            <p class="jcarousel-pagination"></p>
 				</div> <!-- jcarousel-wrapper -->
+				
 				<figure class="template pic-template">
-					<a class="image-link" href=""><img class="pic" src="" alt=""></a>
+					<a class="image-link" href=""><img class="pic" src="#" alt></a>
 					<figcaption class="caption"></figcaption>
 				</figure> <!-- pic template -->
-				
+
 			</div> <!-- content -->
 			
 			<footer>
@@ -92,5 +104,6 @@
 	    <script src="js/aptRender.js"></script>
 	    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
         <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_iXINkwX8A2VggnEyt2pS3kKZRAkFb6o&amp;sensor=false"></script>        
 	</body>
 </html>
